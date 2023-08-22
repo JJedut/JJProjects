@@ -1,0 +1,16 @@
+
+<div class="bg">
+    <div class="box">
+        <div class="text">
+          <h1>Bl<span style="color: #5465ff;">o</span>b</h1>
+          <p>Sign in to your account.</p>
+        </div>
+        <div class="person_data">
+          <input type="input" class="name__field shared-style" placeholder="Login" name="name" id='name' [(ngModel)]="input1Value" (input)="checkInputs()" required />
+          <input type="text" class="password__field shared-style" placeholder="Password" name="password" id='password' [(ngModel)]="input2Value" (input)="checkInputs()" required />
+          <button role="button" class="button-up shared-button">Sign up</button>
+          <button role="button" class="button-in shared-button" [disabled]="!areInputsFilled" (click)="submitForm()">Sign in</button>
+          <span class="errors" *ngFor="let i of error">{{ i }}<br></span>
+        </div>
+    </div>
+</div>

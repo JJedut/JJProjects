@@ -1,0 +1,176 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; overflow: hidden; }
+body { margin: 0; font-family: 'Rubik', sans-serif; }
+$dark: #1F2327;
+$darker: #1B1F22;
+$lighter: #2B3035;
+$punch: #5465ff;
+$text: #DADEE2;
+$error: #e63946;
+
+
+
+
+
+.box {
+  width: 60%;
+  height: 60%;
+  min-width: 27em;
+  max-width: 45em;
+  min-height: 36em;
+  max-height: 42em;
+  background: linear-gradient(135deg, $dark 40%, rgba(31, 35, 39, 0) 100%);
+  backdrop-filter: blur(15px);
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 1px $lighter;
+}
+
+.box .text {
+  font-family: 'Rubik', sans-serif;
+  position: absolute;
+  top: 5px;
+  left: 55px;
+  font-size: 32px;
+  color: $text;
+}
+
+.box .element {
+  overflow: hidden;
+}
+
+.box .text h1 {
+  margin-bottom: -20px;
+}
+
+.errors {
+  position:  relative;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  top: 90%;
+  color: $text;
+}
+
+.shared-style {
+  left: 60px;
+  width: 290px;
+  position: absolute;
+  font-size: 18px;
+  box-shadow: 0 0 0 1px $lighter;
+  border-radius: 10px;
+  background: $darker;
+  color: $text;
+  border: none;
+  outline: none;
+  padding: 10px;
+  transition: .2s;
+}
+
+.shared-style::placeholder {
+  color: $text;
+}
+
+.name__field{
+	top: 12em;
+  height: 20px;
+}
+
+.password__field{
+	top: 15em;
+  height: 20px;
+}
+
+.shared-style:hover {
+  box-shadow: 0 0 0 2px $text;
+}
+
+.shared-style:focus {
+  box-shadow: 0 0 0 2px $punch;
+}
+
+
+.shared-button {
+  left: 60px;
+  position: absolute;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-family: 'Rubik', sans-serif;
+  transition: .2s;
+}
+
+
+.button-up {
+	top: 80%;
+  left: 60px;
+  width: 120px;
+  height: 40px;
+  background: none;
+  color: $text;
+}
+
+.button-up:hover {
+  box-shadow: 0 0 0 2px $text;
+  color: $text;
+}
+
+.button-up:active {
+  box-shadow: 0 0 0 0 $punch;
+  background-color: $punch;
+  color: $dark;
+  transition: .01s;
+}
+
+
+.button-in {
+	top: 80%;
+  left: 250px;
+  width: 120px;
+  height: 40px;
+  background: $punch;
+  color: $text;
+}
+
+.button-in:disabled {
+    background: $punch;
+    filter: grayscale(80%);
+    pointer-events: none;
+}
+
+.button-in:hover {
+  box-shadow: 0 0 0 2px $text;
+  color: $text;
+}
+
+.button-in:active {
+  box-shadow: 0 0 0 0 $punch;
+  background-color: $punch;
+  color: $dark;
+  transition: .01s;
+}
+
+.forgot {
+  position: absolute;
+  top: 55%;
+  left: 70px;
+  color: $text;
+  opacity: 50%;
+  font-size: small;
+  font-family: 'Rubik', sans-serif;
+  transition: .2s;
+}
+
+.forgot:hover {
+  opacity: 100%;
+}
+
+
+
+
